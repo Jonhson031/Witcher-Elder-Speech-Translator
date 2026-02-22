@@ -1,0 +1,62 @@
+.paragraph {
+    color: #99A1AF;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.25rem;
+    column-gap: 1rem;
+}
+.form div:first-child {
+    grid-column: 1 / span 3;
+}
+
+.form label {
+    color: #D1D5DC;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* 150% */
+}
+
+.form div:last-child {
+    grid-column: 3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form button {
+    color: #FFF;
+    font-style: normal;
+    line-height: 1.5rem;
+    background-color: #7A1F1F;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.1s;
+    max-width: fit-content;
+    padding: 0.8rem 1.73rem 0.86rem 2rem;
+}
+
+.form button img {
+    margin-right: 0.5rem;
+}
+.form button:hover {
+    transform: scale(1.05);
+    background-color: hsl(359, 61%, 35%);
+}

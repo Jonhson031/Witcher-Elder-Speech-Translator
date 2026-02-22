@@ -1,0 +1,49 @@
+header {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+h1 {
+    color: #C9A55C;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 0.75rem;
+}
+
+h1 span:first-child {
+    margin-right: 0.75rem;
+}
+
+h1 span:nth-child(2) {
+    margin-left: 0.75rem;
+}
+
+p {
+    color: #99A1AF;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    max-width: 14rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    column-gap: 0.75rem;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.divider span {
+    width: 100%;
+    background-color: #C9A55C;
+    height: 0.5px;
+    background: linear-gradient(90deg, rgba(201, 165, 92, 1) 20%, rgba(0, 0, 0, 1) 100%);
+}
+
+.divider span:first-child {
+    transform: rotate(180deg);
+}

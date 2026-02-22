@@ -1,0 +1,43 @@
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #151515;
+  border-right: 0.04rem solid #333333;
+  border-left: 0.04rem solid #333333;
+  padding: 1rem 0;
+}
+.switchLanguagesBtn {
+  border-radius: 50%;
+  background-color: #7B1E1F;
+  width: 2.7498rem;
+  height: 2.7498rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s;
+}
+
+.translateBtn {
+  position: relative;
+  background-color: #C9A55C;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.73rem 0.86rem 2rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.1s;
+}
+
+.translateBtn:hover {
+  transform: scale(1.05);
+  background-color: hsl(40, 50%, 65%);
+}
+
+.switchLanguagesBtn:hover {
+  transform: scale(1.05);
+  background-color: hsl(359, 61%, 35%);
+}
