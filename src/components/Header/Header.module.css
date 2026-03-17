@@ -1,5 +1,5 @@
 header {
-    padding: 4rem 0;
+    padding: 4rem 10px;
     text-align: center;
 }
 
@@ -7,9 +7,9 @@ h1 {
     color: #C9A55C;
     font-family: 'Cinzel', serif;
     font-weight: 700;
-    font-size: 3.75rem;
     line-height: 3.75rem;
     margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 1.2045rem + 3.9773vw, 3.75rem);
 }
 
 h1 span:first-child {
@@ -22,9 +22,9 @@ h1 span:nth-child(2) {
 
 p {
     color: #99A1AF;
-    font-size: 1.25rem;
     line-height: 1.75rem;
     margin-bottom: 1rem;
+    font-size: clamp(1rem, 0.8864rem + 0.5682vw, 1.25rem);
 }
 
 .divider {

@@ -12,6 +12,12 @@
     background-color: transparent;
     font-size: 1rem;
     font-family: "Intern", sans-serif;
+    transition: all 0.2s;
+}
+
+.clearBtn:hover {
+    cursor: pointer;
+    color: #C9A55C;
 }
 
 .list {
