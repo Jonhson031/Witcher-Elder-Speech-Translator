@@ -13,7 +13,9 @@ connectDB();
 
 const PORT = process.env.PORT || 3000;   // use env variable
 const server = app.listen(PORT, () => {
-    console.log(`http://localhost:${PORT}`);
+    if (process.env.NODE_ENV === 'development') {
+        console.log(`http://localhost:${PORT}`);
+    }
 });
 
 process.on("unhandledRejection", (err) => {
