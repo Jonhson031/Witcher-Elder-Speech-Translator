@@ -8,7 +8,11 @@ import errorController from './controllers/errorController.js';
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5173", "http://localhost:3001, https://witcher-elder-speech-translator.vercel.app/, https://witcher-elder-speech-translator-backend.onrender.com"], // allow multiple origins
+    origin: [
+        "http://localhost:5173",
+        "http://localhost:3001",
+        "https://witcher-elder-speech-translator.vercel.app"
+    ],
     methods: ["GET", "POST"],
 }));
 
