@@ -22,7 +22,8 @@ export const translateWord = catchAsync(async (req, res) => {
     const to = req.query.to ? req.query.to : 'englishMeaning'; // language that is going translate to
 
     const result = await Translation.find({ [from]: { $in: words.concat() } }).lean();
-    console.log(result);
+    
+    // console.log(result);
 
     // Used to save all words and their meanings, and not only unuqie
     const translationsMap = words.map(word => {
