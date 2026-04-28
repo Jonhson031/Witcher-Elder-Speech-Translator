@@ -1,0 +1,95 @@
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.modalAlternatives {
+    position: absolute;
+    background-color: #1A191A;
+    border: 0.04rem solid #333333;
+    width: 18.5rem;
+    box-shadow: 0 2px 8px #232114;
+}
+
+.alternativesHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.04rem solid #333333;
+}
+
+.modalAlternatives h2 {
+    font-size: 14px;
+    padding: 0.5rem 0.6rem;
+    background-color: #232114;
+    font-weight: 500;
+}
+
+.alternativesHeader button {
+    width: 2.5rem;
+    height: 2.45rem;
+    background-color: initial;
+    position: relative;
+    border-left: 0.04rem solid #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+}
+
+.alternativesHeader button:hover {
+    background-color: #232114;
+}
+
+.alternativesHeader button::before,
+.alternativesHeader button::after {
+    content: "";
+    position: absolute;
+    width: 1.3875rem;
+    height: 2.35px;
+    background-color: #C9A55C;
+    border-radius: 1.5rem;
+    transform: rotate(130deg);
+}
+
+.alternativesHeader button::after {
+    transform: rotate(-130deg);
+}
+
+.alternativesList {
+    display: flex;
+    flex-direction: column;
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.alternativesList li:last-child {
+    border: none;
+}
+
+.alternativesList li {
+    padding: 0.6rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 0.04rem solid #333333;
+    transition: all 0.2s;
+}
+
+.alternativesList li:hover {
+    background-color: #232114;
+}
+
+.alternativesList li button {
+    width: 100%;
+    height: 100%;
+    background-color: initial;
+    color: #D1D5DC;
+    text-align: left;
+    font-size: 1rem;
+}
